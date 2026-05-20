@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!--=============== GOOGLE FONTS PRECONNECT ===============-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <!--=============== BOXICONS ===============-->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
@@ -16,7 +20,7 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./assets/css/styles.css" />
 
-    <title>My Portfolio</title>
+    <title>Florence Gutierrez | Senior Full Stack Developer</title>
   </head>
   <body>
     <!--=============== HEADER ===============-->
@@ -63,12 +67,13 @@
           <div class="home__data">
             <span class="home__greeting">Hello, I'm</span>
             <h1 class="home__name">Florence Gutierrez</h1>
-            <h3 class="home__education">Full-Stack Web Developer</h3>
+            <h3 class="home__education">Senior Full Stack Developer</h3>
+            <p class="home__tagline">Laravel &middot; PHP &middot; AI &amp; Automation</p>
 
             <div class="home__buttons">
               <a
                 download=""
-                href="/assets/cv/Florence_GutierrezCV2025.docx"
+                href="/assets/cv/Florence_GutierrezCV2025.pdf"
                 class="button button--ghost"
                 >Download CV</a
               >
@@ -114,31 +119,27 @@
           <div class="about__data">
             <div class="about__info">
               <div class="about__box">
-                <i class="bx bx-award about__icon"></i>
-                <h3 class="about__title">Experience</h3>
-                <span class="about__subtitle">2 Years Working</span>
+                <span class="about__number">3+</span>
+                <span class="about__label">Years Experience</span>
               </div>
               <div class="about__box">
-                <i class="bx bx-briefcase-alt about__icon"></i>
-                <h3 class="about__title">Completed</h3>
-                <span class="about__subtitle"> Multiple Projects</span>
+                <span class="about__number">10+</span>
+                <span class="about__label">Projects Delivered</span>
               </div>
               <div class="about__box">
-                <i class="bx bx-support about__icon"></i>
-                <h3 class="about__title">Suport</h3>
-                <span class="about__subtitle">Online 24/7</span>
+                <span class="about__number">24/7</span>
+                <span class="about__label">Online Support</span>
               </div>
             </div>
 
             <p class="about__description">
-              Hi, I'm Florence Gutierrez. I'm a Full Stack Developer with two
-              years of hands-on experience in building websites and web
-              applications using Laravel (PHP) and WordPress. I’ve developed and
-              maintained multiple projects—from custom business websites to
-              dynamic web applications—focusing on clean code, performance, and
-              responsive design. I’m passionate about creating user-friendly
-              digital experiences and always eager to learn new technologies and
-              improve my skills.
+              Hi, I'm Florence Gutierrez &mdash; a Senior Full Stack Developer
+              with 3+ years of experience building performant, scalable web
+              applications. I specialize in Laravel and PHP-based systems and
+              have growing expertise in AI automation and workflow integration
+              using Zapier, Make, n8n, and HighLevel. I'm passionate about
+              clean code, great user experiences, and automating processes that
+              save time and drive real results.
             </p>
 
             <a href="#contact" class="button">Contact Me</a>
@@ -149,132 +150,53 @@
       <!--=============== SKILLS ===============-->
       <section class="skills section" id="skills">
         <span class="section__subtitle">My Abilities</span>
-        <h2 class="section__title">My Experience</h2>
+        <h2 class="section__title">My Skills</h2>
 
         <div class="skills__container container grid">
           <div class="skills__content">
-            <h3 class="skills__title">Frontend Development</h3>
-
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">CSS</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">JavaScript</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Bootstrap</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Wordpress</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">React</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
+            <h3 class="skills__title">
+              <i class="bx bx-code-alt"></i> Frontend Development
+            </h3>
+            <div class="skills__chips">
+              <span class="skills__chip">HTML</span>
+              <span class="skills__chip">CSS</span>
+              <span class="skills__chip">JavaScript</span>
+              <span class="skills__chip">Bootstrap</span>
+              <span class="skills__chip">React</span>
+              <span class="skills__chip">WordPress</span>
             </div>
           </div>
 
-          <!-- dhfasldgffs -->
           <div class="skills__content">
-            <h3 class="skills__title">Backend Development</h3>
+            <h3 class="skills__title">
+              <i class="bx bx-server"></i> Backend Development
+            </h3>
+            <div class="skills__chips">
+              <span class="skills__chip">PHP</span>
+              <span class="skills__chip">Laravel</span>
+              <span class="skills__chip">Node.js</span>
+              <span class="skills__chip">Python</span>
+              <span class="skills__chip">MySQL</span>
+              <span class="skills__chip">REST APIs</span>
+            </div>
+          </div>
 
-            <div class="skills__box">
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">PHP</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Node JS</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Python</h3>
-                    <span class="skills__level">Basic</span>
-                  </div>
-                </div>
-              </div>
-
-              <div class="skills__group">
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">MySQL</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-
-                <div class="skills__data">
-                  <i class="bx bxs-badge-check"></i>
-
-                  <div>
-                    <h3 class="skills__name">Laravel</h3>
-                    <span class="skills__level">Intermediate</span>
-                  </div>
-                </div>
-              </div>
+          <div class="skills__content">
+            <h3 class="skills__title">
+              <i class="bx bx-bot"></i> AI &amp; Automation
+            </h3>
+            <div class="skills__chips">
+              <span class="skills__chip">Zapier</span>
+              <span class="skills__chip">Make (Integromat)</span>
+              <span class="skills__chip">n8n</span>
+              <span class="skills__chip">HighLevel</span>
+              <span class="skills__chip">Workflow Integration</span>
             </div>
           </div>
         </div>
       </section>
 
-      <!--=============== SERVICES ===============-->
+            <!--=============== SERVICES ===============-->
       <section class="services section">
         <span class="section__subtitle">My Services</span>
         <h2 class="section__title">What I Offer</h2>
@@ -439,6 +361,62 @@
               </div>
             </div>
           </div>
+
+          <div class="services__card">
+            <h3 class="services__title">
+              AI &amp; <br />
+              Automation
+            </h3>
+            <span class="services__button"
+              >See More <i class="bx bx-right-arrow-alt services__icon"></i
+            ></span>
+
+            <div class="services__modal">
+              <div class="services__modal-content">
+                <i class="bx bx-x services__modal-close"></i>
+                <h3 class="services__modal-title">AI &amp; Automation</h3>
+                <p class="services__modal-description">
+                  I design and implement intelligent automation workflows that
+                  streamline business processes, reduce manual work, and
+                  integrate systems seamlessly.
+                </p>
+
+                <ul class="services__modal-list">
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Build no-code/low-code workflows using Zapier, Make
+                      (Integromat), and n8n.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Integrate CRM and marketing tools using HighLevel
+                      (GoHighLevel).
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Connect APIs and automate data flows between apps to save
+                      time and reduce errors.
+                    </p>
+                  </li>
+
+                  <li class="services__modal-item">
+                    <i class="bx bx-check services__modal-icon"></i>
+                    <p class="services__modal-info">
+                      Set up AI-powered pipelines for lead management, email
+                      sequences, and business workflows.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -446,70 +424,195 @@
       <section class="work section" id="work">
         <span class="section__subtitle">My Portfolio</span>
         <h2 class="section__title">Recent Works</h2>
+
         <div class="work__filters">
           <span class="work__item active-work" data-filter="all">All</span>
-          <span class="work__item" data-filter=".web">Larevel</span>
-          <!-- <span class="work__item" data-filter=".php">PHP</span> -->
-          <span class="work__item" data-filter=".design">Wordpress</span>
+          <span class="work__item" data-filter=".web">Laravel</span>
+          <span class="work__item" data-filter=".design">WordPress</span>
+          <span class="work__item" data-filter=".php">PHP</span>
+          <span class="work__item" data-filter=".automation">AI &amp; Automation</span>
         </div>
 
         <div class="work__container container grid">
-          <div class="work__card mix web">
-            <img src="./assets/img/image.png" alt="" class="work__img" />
-            <h3 class="work__title">Domain Ichiba</h3>
-            <p></p>
 
-            <a href="https://www.domainichiba.com/" class="work__button"
-              >Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
+          <article class="work__card mix web">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/image.png" alt="Domain Ichiba" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Domain marketplace platform with search, filtering, and transaction management built on Laravel.</p>
+                <a href="https://www.domainichiba.com/" target="_blank" class="work__overlay-btn">
+                  <i class="bx bx-link-external"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Domain Ichiba</h3>
+              <div class="work__tags">
+                <span class="work__tag">Laravel</span>
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="work__card mix design">
-            <img src="./assets/img/image2.png" alt="" class="work__img" />
-            <h3 class="work__title">Bentahero.com</h3>
+          <article class="work__card mix design">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/image2.png" alt="Bentahero" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Custom WordPress website for Bentahero featuring dynamic content management and responsive design.</p>
+                <a href="https://www.bentahero.com/" target="_blank" class="work__overlay-btn">
+                  <i class="bx bx-link-external"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Bentahero.com</h3>
+              <div class="work__tags">
+                <span class="work__tag">WordPress</span>
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">CSS</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://www.bentahero.com/" class="work__button"
-              >Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
+          <article class="work__card mix web">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/craftshack.png" alt="CraftShack" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">E-commerce platform for CraftShack built with Laravel, featuring product catalog and online ordering.</p>
+                <a href="https://craftshack.ph/" target="_blank" class="work__overlay-btn">
+                  <i class="bx bx-link-external"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">CraftShack Website</h3>
+              <div class="work__tags">
+                <span class="work__tag">Laravel</span>
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="work__card mix web">
-            <img src="./assets/img/craftshack.png" alt="" class="work__img" />
-            <h3 class="work__title">CraftShack Website</h3>
+          <article class="work__card mix web">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/primedasma.png" alt="Prime Dasma" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Medical services web application with appointment booking and patient management built on Laravel.</p>
+                <a href="https://primedasmamed.com/" target="_blank" class="work__overlay-btn">
+                  <i class="bx bx-link-external"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Prime Dasma</h3>
+              <div class="work__tags">
+                <span class="work__tag">Laravel</span>
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://craftshack.ph/" class="work__button"
-              >Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
+          <article class="work__card mix web">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/bcrtherapie.png" alt="BCR Therapie" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Therapy services website with service listings and contact management, built with Laravel.</p>
+                <a href="https://bcrtherapie.co.uk/" target="_blank" class="work__overlay-btn">
+                  <i class="bx bx-link-external"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">BCR Therapie</h3>
+              <div class="work__tags">
+                <span class="work__tag">Laravel</span>
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+              </div>
+            </div>
+          </article>
 
-          <div class="work__card mix web">
-            <img src="./assets/img/primedasma.png" alt="" class="work__img" />
-            <h3 class="work__title">Prime Dasma</h3>
+          <article class="work__card mix web">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/homeofkufi.png" alt="The Home Of Kufis" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">E-commerce store for Islamic headwear with product catalog and secure checkout, built on Laravel.</p>
+                <a href="http://thehomeofkufis.co.uk/" target="_blank" class="work__overlay-btn">
+                  <i class="bx bx-link-external"></i> Live Demo
+                </a>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">The Home Of Kufis</h3>
+              <div class="work__tags">
+                <span class="work__tag">Laravel</span>
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://primedasmamed.com/" class="work__button"
-              >Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-          <div class="work__card mix web">
-            <img src="./assets/img/bcrtherapie.png" alt="" class="work__img" />
-            <h3 class="work__title">BCR Therapie</h3>
+          <article class="work__card mix php">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/work1.jpg" alt="Queueing System" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Digital queue management system with real-time number display, ticket generation, and multi-counter support.</p>
+                <span class="work__overlay-label"><i class="bx bx-lock-alt"></i> Internal System</span>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Queueing System</h3>
+              <div class="work__tags">
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+                <span class="work__tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="https://bcrtherapie.co.uk/" class="work__button"
-              >Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
-          <div class="work__card mix web">
-            <img src="./assets/img/homeofkufi.png" alt="" class="work__img" />
-            <h3 class="work__title">The Home Of Kufis</h3>
+          <article class="work__card mix php">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/work2.jpg" alt="Budget Request System" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Internal financial workflow app for managing budget requests, departmental approvals, and expense tracking.</p>
+                <span class="work__overlay-label"><i class="bx bx-lock-alt"></i> Internal System</span>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Budget Request System</h3>
+              <div class="work__tags">
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+                <span class="work__tag">Bootstrap</span>
+              </div>
+            </div>
+          </article>
 
-            <a href="http://thehomeofkufis.co.uk/" class="work__button"
-              >Demo <i class="bx bx-right-arrow-alt work__icon"></i>
-            </a>
-          </div>
+          <article class="work__card mix php">
+            <div class="work__img-wrapper">
+              <img src="./assets/img/work3.jpg" alt="Inventory Management System" class="work__img" />
+              <div class="work__overlay">
+                <p class="work__desc">Comprehensive inventory tracking system with stock monitoring, detailed reporting, and user access control.</p>
+                <span class="work__overlay-label"><i class="bx bx-lock-alt"></i> Internal System</span>
+              </div>
+            </div>
+            <div class="work__info">
+              <h3 class="work__title">Inventory Management</h3>
+              <div class="work__tags">
+                <span class="work__tag">PHP</span>
+                <span class="work__tag">MySQL</span>
+                <span class="work__tag">Bootstrap</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </section>
 
-      <!--=============== CONTACT ===============-->
+            <!--=============== CONTACT ===============-->
       <section class="contact section" id="contact">
         <span class="section__subtitle">Get in Touch</span>
         <h2 class="section__title">Contact Me</h2>
@@ -639,7 +742,7 @@
           ></a>
         </ul>
 
-        <span class="footer__copy">&#169; Florence. All Rigts Reserved </span>
+        <span class="footer__copy">&#169; 2026 Florence Gutierrez. All Rights Reserved </span>
       </div>
     </footer>
 

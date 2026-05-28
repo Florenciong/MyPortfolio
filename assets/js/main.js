@@ -1,130 +1,178 @@
-/*=============== CHANGE BACKGROUND HEADER ===============*/
-const scrollHeader = () => {
-  const header = document.getElementById("header");
-  // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  this.scrollY >= 50
-    ? header.classList.add("scroll-header")
-    : header.classList.remove("scroll-header");
-};
-window.addEventListener("scroll", scrollHeader);
+﻿/* ============================================================
+   main.js — Florence Gutierrez Portfolio
+   ============================================================ */
 
-/*=============== SERVICES MODAL ===============*/
-const modalViews = document.querySelectorAll(".services__modal"),
-  modalBtns = document.querySelectorAll(".services__button"),
-  modalClose = document.querySelectorAll(".services__modal-close");
+/* ----------------------------------------------------------
+   1. SCROLL HEADER
+   ---------------------------------------------------------- */
+var header = document.getElementById('header');
 
-let modal = function (modalClick) {
-  modalViews[modalClick].classList.add("active-modal");
-};
-
-modalBtns.forEach((mb, i) => {
-  mb.addEventListener("click", () => {
-    modal(i);
-  });
-});
-
-modalClose.forEach((mc) => {
-  mc.addEventListener("click", () => {
-    modalViews.forEach((mv) => {
-      mv.classList.remove("active-modal");
-    });
-  });
-});
-
-/*=============== MIXITUP FILTER PORTFOLIO ===============*/
-let mixerPortfolio = mixitup(".work__container", {
-  selectors: {
-    target: ".work__card",
-  },
-  animation: {
-    duration: 300,
-  },
-});
-/* Link active work */
-const linkWork = document.querySelectorAll(".work__item");
-
-function activeWork() {
-  linkWork.forEach((l) => l.classList.remove("active-work"));
-  this.classList.add("active-work");
+function scrollHeader() {
+  if (window.scrollY >= 50) {
+    header.classList.add('scroll-header');
+  } else {
+    header.classList.remove('scroll-header');
+  }
 }
 
-linkWork.forEach((l) => l.addEventListener("click", activeWork));
+window.addEventListener('scroll', scrollHeader);
 
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-const sections = document.querySelectorAll("section[id]");
+/* ----------------------------------------------------------
+   2. MIXITUP FILTER — Work / Case Studies
+   ---------------------------------------------------------- */
+var workContainer = document.querySelector('.work__container');
+var mixerPortfolio;
 
-const scrollActive = () => {
-  const scrollY = window.pageYOffset;
-
-  sections.forEach((current) => {
-    const sectionHeight = current.offsetHeight,
-      sectionTop = current.offsetTop - 58,
-      sectionId = current.getAttribute("id"),
-      sectionsClass = document.querySelector(
-        ".nav__menu a[href*=" + sectionId + "]"
-      );
-
-    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-      sectionsClass.classList.add("active-link");
-    } else {
-      sectionsClass.classList.remove("active-link");
+if (workContainer) {
+  mixerPortfolio = mixitup(workContainer, {
+    selectors: {
+      target: '.mix'
+    },
+    animation: {
+      duration: 300
+    },
+    load: {
+      filter: '.automation'
     }
   });
-};
-window.addEventListener("scroll", scrollActive);
-
-/*=============== LIGHT DARK THEME ===============*/
-const themeButton = document.getElementById("theme-button");
-const lightTheme = "light-theme";
-const iconTheme = "bx-sun";
-
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem("selected-theme");
-const selectedIcon = localStorage.getItem("selected-icon");
-
-// We obtain the current theme that the interface has by validating the light-theme class
-const getCurrentTheme = () =>
-  document.body.classList.contains(lightTheme) ? "dark" : "light";
-const getCurrentIcon = () =>
-  themeButton.classList.contains(iconTheme) ? "bx bx-moon" : "bx bx-sun";
-
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-  document.body.classList[selectedTheme === "dark" ? "add" : "remove"](
-    lightTheme
-  );
-  themeButton.classList[selectedIcon === "bx bx-moon" ? "add" : "remove"](
-    iconTheme
-  );
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener("click", () => {
-  // Add or remove the dark / icon theme
-  document.body.classList.toggle(lightTheme);
-  themeButton.classList.toggle(iconTheme);
-  // We save the theme and the current icon that the user chose
-  localStorage.setItem("selected-theme", getCurrentTheme());
-  localStorage.setItem("selected-icon", getCurrentIcon());
+var workFilters = document.querySelectorAll('.work__filter');
+
+workFilters.forEach(function(filter) {
+  filter.addEventListener('click', function() {
+    var filterValue = this.getAttribute('data-filter');
+
+    workFilters.forEach(function(f) {
+      f.classList.remove('active-work');
+    });
+    this.classList.add('active-work');
+
+    if (mixerPortfolio) {
+      mixerPortfolio.filter(filterValue);
+    }
+  });
 });
 
-/*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
-  origin: "bottom",
-  distance: "60px",
-  duration: 1800,
-  delay: 300,
-  //reset:true
+/* ----------------------------------------------------------
+   3. SCROLL ACTIVE LINK
+   ---------------------------------------------------------- */
+var sections = document.querySelectorAll('section[id]');
+
+function scrollActiveLink() {
+  var scrollY = window.scrollY;
+
+  sections.forEach(function(section) {
+    var sectionHeight = section.offsetHeight;
+    var sectionTop = section.offsetTop - 100;
+    var sectionId = section.getAttribute('id');
+    var navLink = document.querySelector(".nav__menu a[href*='" + sectionId + "']");
+
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+      if (navLink) navLink.classList.add('active-link');
+    } else {
+      if (navLink) navLink.classList.remove('active-link');
+    }
+  });
+}
+
+window.addEventListener('scroll', scrollActiveLink);
+
+/* ----------------------------------------------------------
+   4. MOBILE NAV TOGGLE
+   ---------------------------------------------------------- */
+var navToggle = document.getElementById('nav-toggle');
+var navMenu = document.getElementById('nav-menu');
+
+if (navToggle && navMenu) {
+  navToggle.addEventListener('click', function() {
+    navMenu.classList.toggle('nav--open');
+    var icon = navToggle.querySelector('i');
+    if (icon) {
+      icon.classList.toggle('bx-menu');
+      icon.classList.toggle('bx-x');
+    }
+  });
+
+  var navLinks = navMenu.querySelectorAll('.nav__link');
+  navLinks.forEach(function(link) {
+    link.addEventListener('click', function() {
+      navMenu.classList.remove('nav--open');
+      var icon = navToggle.querySelector('i');
+      if (icon) {
+        icon.classList.add('bx-menu');
+        icon.classList.remove('bx-x');
+      }
+    });
+  });
+}
+
+/* ----------------------------------------------------------
+   5. SCROLLREVEAL ANIMATIONS
+   ---------------------------------------------------------- */
+var sr = ScrollReveal({
+  origin: 'bottom',
+  distance: '40px',
+  duration: 1600,
+  delay: 200,
+  reset: false
 });
 
-sr.reveal(`.home__data`);
-sr.reveal(`.home__handle`, { delay: 600, origin: "top" });
-sr.reveal(`.home__social, .home__scroll`, { delay: 800, origin: "bottom" });
-sr.reveal(`.about__img`, { origin: "left" });
-sr.reveal(`.about__data`, { origin: "right" });
-sr.reveal(`.skills__content`, { interval: 150 });
-sr.reveal(`.services__card`, { interval: 150 });
-sr.reveal(`.work__card`, { interval: 100 });
-sr.reveal(`.contact__card`, { interval: 150 });
-sr.reveal(`.contact__content`, { interval: 200 });
+sr.reveal('.hero__content', { delay: 0 });
+sr.reveal('.hero__image-col', { delay: 400, origin: 'right' });
+
+sr.reveal('.about__image-col', { origin: 'left' });
+sr.reveal('.about__text-col', { origin: 'right' });
+
+sr.reveal('.services__card', { interval: 100 });
+
+sr.reveal('.work__card', { interval: 80 });
+
+sr.reveal('.process__step', { interval: 120 });
+
+sr.reveal('.pricing__card', { interval: 120 });
+
+sr.reveal('.experience__item', { interval: 120 });
+
+sr.reveal('.stack__group', { interval: 100 });
+
+sr.reveal('.contact__info-col', { origin: 'left' });
+sr.reveal('.contact__form-col', { origin: 'right' });
+
+/* ----------------------------------------------------------
+   6. IMAGE LIGHTBOX
+   ---------------------------------------------------------- */
+(function () {
+  var lightbox      = document.getElementById('lightbox');
+  var lightboxImg   = document.getElementById('lightbox-img');
+  var lightboxClose = document.getElementById('lightbox-close');
+  var backdrop      = document.getElementById('lightbox-backdrop');
+
+  if (!lightbox) return;
+
+  function openLightbox(src, alt) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || '';
+    lightbox.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  document.querySelectorAll('.work__card-img-wrapper').forEach(function (wrapper) {
+    wrapper.addEventListener('click', function () {
+      var img = wrapper.querySelector('img');
+      if (img) openLightbox(img.src, img.alt);
+    });
+  });
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  backdrop.addEventListener('click', closeLightbox);
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') closeLightbox();
+  });
+}());

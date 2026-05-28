@@ -1,761 +1,1037 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!--=============== GOOGLE FONTS PRECONNECT ===============-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
-    <!--=============== BOXICONS ===============-->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-
-    <!--=============== SWIPER CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
-
-    <!--=============== CSS ===============-->
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-
-    <title>Florence Gutierrez | Senior Full Stack Developer</title>
-  </head>
-  <body>
-    <!--=============== HEADER ===============-->
-    <header class="header" id="header">
-      <nav class="nav container">
-        <a href="" class="nav__logo">FYG</a>
-
-        <div class="nav__menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link"
-                ><i class="bx bx-home-alt"></i
-              ></a>
-            </li>
-            <li class="nav__item">
-              <a href="#about" class="nav__link"><i class="bx bx-user"></i></a>
-            </li>
-            <li class="nav__item">
-              <a href="#skills" class="nav__link"><i class="bx bx-book"></i></a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link"
-                ><i class="bx bx-briefcase-alt-2"></i
-              ></a>
-            </li>
-            <li class="nav__item">
-              <a href="#contact" class="nav__link"
-                ><i class="bx bx-message-square-detail"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-
-        <!-- Theme change button -->
-        <i class="bx bx-moon change-theme" id="theme-button"></i>
-      </nav>
-    </header>
-
-    <!--=============== MAIN ===============-->
-    <main class="main">
-      <!--=============== HOME ===============-->
-      <section class="home section" id="home">
-        <div class="home__container container grid">
-          <div class="home__data">
-            <span class="home__greeting">Hello, I'm</span>
-            <h1 class="home__name">Florence Gutierrez</h1>
-            <h3 class="home__education">Senior Full Stack Developer</h3>
-            <p class="home__tagline">Laravel &middot; PHP &middot; AI &amp; Automation</p>
-
-            <div class="home__buttons">
-              <a
-                download=""
-                href="/assets/cv/Florence_GutierrezCV2025.pdf"
-                class="button button--ghost"
-                >Download CV</a
-              >
-              <a href="#about" class="button">About Me</a>
-            </div>
-          </div>
-
-          <div class="home__handle">
-            <img src="assets/img/florence1.png" alt="" class="home__immg" />
-          </div>
-
-          <div class="home__social">
-            <a
-              href="https://www.linkedin.com/in/florence-gutierrez-5a3b60260/"
-              target="_blank"
-              class="home__social-link"
-              ><i class="bx bxl-linkedin-square"></i
-            ></a>
-            <a
-              href="https://github.com/Florenciong"
-              target="_blank"
-              class="home__social-link"
-              ><i class="bx bxl-github"></i
-            ></a>
-            <a href="" target="_blank" class="home__social-link"
-              ><i class="bx bx-phone"></i
-            ></a>
-          </div>
-
-          <a href="#about" class="home__scroll">
-            <i class="bx bx-mouse home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
-          </a>
-        </div>
-      </section>
-
-      <!--=============== ABOUT ===============-->
-      <section class="about section" id="about">
-        <span class="section__subtitle">My Intro</span>
-        <h2 class="section__title">About Me</h2>
-        <div class="about__container container grid">
-          <img src="./assets/img/image4.jpg" alt="" class="about__img" />
-          <div class="about__data">
-            <div class="about__info">
-              <div class="about__box">
-                <span class="about__number">3+</span>
-                <span class="about__label">Years Experience</span>
-              </div>
-              <div class="about__box">
-                <span class="about__number">10+</span>
-                <span class="about__label">Projects Delivered</span>
-              </div>
-              <div class="about__box">
-                <span class="about__number">24/7</span>
-                <span class="about__label">Online Support</span>
-              </div>
-            </div>
-
-            <p class="about__description">
-              Hi, I'm Florence Gutierrez &mdash; a Senior Full Stack Developer
-              with 3+ years of experience building performant, scalable web
-              applications. I specialize in Laravel and PHP-based systems and
-              have growing expertise in AI automation and workflow integration
-              using Zapier, Make, n8n, and HighLevel. I'm passionate about
-              clean code, great user experiences, and automating processes that
-              save time and drive real results.
-            </p>
-
-            <a href="#contact" class="button">Contact Me</a>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== SKILLS ===============-->
-      <section class="skills section" id="skills">
-        <span class="section__subtitle">My Abilities</span>
-        <h2 class="section__title">My Skills</h2>
-
-        <div class="skills__container container grid">
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="bx bx-code-alt"></i> Frontend Development
-            </h3>
-            <div class="skills__chips">
-              <span class="skills__chip">HTML</span>
-              <span class="skills__chip">CSS</span>
-              <span class="skills__chip">JavaScript</span>
-              <span class="skills__chip">Bootstrap</span>
-              <span class="skills__chip">React</span>
-              <span class="skills__chip">WordPress</span>
-            </div>
-          </div>
-
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="bx bx-server"></i> Backend Development
-            </h3>
-            <div class="skills__chips">
-              <span class="skills__chip">PHP</span>
-              <span class="skills__chip">Laravel</span>
-              <span class="skills__chip">Node.js</span>
-              <span class="skills__chip">Python</span>
-              <span class="skills__chip">MySQL</span>
-              <span class="skills__chip">REST APIs</span>
-            </div>
-          </div>
-
-          <div class="skills__content">
-            <h3 class="skills__title">
-              <i class="bx bx-bot"></i> AI &amp; Automation
-            </h3>
-            <div class="skills__chips">
-              <span class="skills__chip">Zapier</span>
-              <span class="skills__chip">Make (Integromat)</span>
-              <span class="skills__chip">n8n</span>
-              <span class="skills__chip">HighLevel</span>
-              <span class="skills__chip">Workflow Integration</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-            <!--=============== SERVICES ===============-->
-      <section class="services section">
-        <span class="section__subtitle">My Services</span>
-        <h2 class="section__title">What I Offer</h2>
-
-        <div class="services__container container grid">
-          <div class="services__card">
-            <h3 class="services__title">
-              Product <br />
-              Design
-            </h3>
-            <span class="services__button"
-              >See More <i class="bx bx-right-arrow-alt services__icon"></i
-            ></span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Product Design</h3>
-                <p class="services__modal-description">
-                  I'm a product design specialist with a passion for helping
-                  businesses establish their unique identity and stand out in
-                  their industry.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      With knowledge of color, typography, detail, and other
-                      design elements to create a product.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Will generally fold UX principles into their design.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      As a person that takes a holistic view to designing a
-                      product, a product designer often collaborates with
-                      designers, researchers, and business teams.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="services__card">
-            <h3 class="services__title">
-              Ui/Ux <br />
-              Design
-            </h3>
-            <span class="services__button"
-              >See More <i class="bx bx-right-arrow-alt services__icon"></i
-            ></span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Ui/Ux Design</h3>
-                <p class="services__modal-description">
-                  I'm designing websites and my ultimate goal is to create
-                  products that are not only functional, but also a pleasure to
-                  use.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Advocate for user needs throughout the design and
-                      implementation process, even if the research contradicts
-                      the status quo.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Create user-friendly interfaces that enable users to
-                      understand how to use complex technical products.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      I don't just design apps and websites; I spend time
-                      getting to know the target audience, identifying problems
-                      that need to be solved and coming up with solutions to
-                      those user problems.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="services__card">
-            <h3 class="services__title">
-              Web <br />
-              Development
-            </h3>
-            <span class="services__button"
-              >See More <i class="bx bx-right-arrow-alt services__icon"></i
-            ></span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">Web Development</h3>
-                <p class="services__modal-description">
-                  I have the skills and experience necessary to bring website
-                  designs to life using a variety of programming languages and
-                  technologies.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Designing user interfaces and navigation menus.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Writing and reviewing code for sites, typically HTML, XML,
-                      or JavaScript.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Integrating multimedia content onto a site.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Testing web applications.
-                    </p>
-                  </li>
-
-                  <li class="service__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Troubleshooting problems with performance or user
-                      experience.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="services__card">
-            <h3 class="services__title">
-              AI &amp; <br />
-              Automation
-            </h3>
-            <span class="services__button"
-              >See More <i class="bx bx-right-arrow-alt services__icon"></i
-            ></span>
-
-            <div class="services__modal">
-              <div class="services__modal-content">
-                <i class="bx bx-x services__modal-close"></i>
-                <h3 class="services__modal-title">AI &amp; Automation</h3>
-                <p class="services__modal-description">
-                  I design and implement intelligent automation workflows that
-                  streamline business processes, reduce manual work, and
-                  integrate systems seamlessly.
-                </p>
-
-                <ul class="services__modal-list">
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Build no-code/low-code workflows using Zapier, Make
-                      (Integromat), and n8n.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Integrate CRM and marketing tools using HighLevel
-                      (GoHighLevel).
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Connect APIs and automate data flows between apps to save
-                      time and reduce errors.
-                    </p>
-                  </li>
-
-                  <li class="services__modal-item">
-                    <i class="bx bx-check services__modal-icon"></i>
-                    <p class="services__modal-info">
-                      Set up AI-powered pipelines for lead management, email
-                      sequences, and business workflows.
-                    </p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!--=============== WORK ===============-->
-      <section class="work section" id="work">
-        <span class="section__subtitle">My Portfolio</span>
-        <h2 class="section__title">Recent Works</h2>
-
-        <div class="work__filters">
-          <span class="work__item active-work" data-filter="all">All</span>
-          <span class="work__item" data-filter=".web">Laravel</span>
-          <span class="work__item" data-filter=".design">WordPress</span>
-          <span class="work__item" data-filter=".php">PHP</span>
-          <span class="work__item" data-filter=".automation">AI &amp; Automation</span>
-        </div>
-
-        <div class="work__container container grid">
-
-          <article class="work__card mix web">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/image.png" alt="Domain Ichiba" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Domain marketplace platform with search, filtering, and transaction management built on Laravel.</p>
-                <a href="https://www.domainichiba.com/" target="_blank" class="work__overlay-btn">
-                  <i class="bx bx-link-external"></i> Live Demo
-                </a>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">Domain Ichiba</h3>
-              <div class="work__tags">
-                <span class="work__tag">Laravel</span>
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">MySQL</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix design">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/image2.png" alt="Bentahero" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Custom WordPress website for Bentahero featuring dynamic content management and responsive design.</p>
-                <a href="https://www.bentahero.com/" target="_blank" class="work__overlay-btn">
-                  <i class="bx bx-link-external"></i> Live Demo
-                </a>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">Bentahero.com</h3>
-              <div class="work__tags">
-                <span class="work__tag">WordPress</span>
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix design">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/craftshack.png" alt="CraftShack" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Custom WordPress website for CraftShack featuring dynamic content management and responsive design.</p>
-                <a href="https://craftshack.ph/" target="_blank" class="work__overlay-btn">
-                  <i class="bx bx-link-external"></i> Live Demo
-                </a>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">CraftShack Website</h3>
-              <div class="work__tags">
-                <span class="work__tag">WordPress</span>
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix design">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/primedasma.png" alt="Prime Dasma" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Custom WordPress website for Prime Dasma featuring dynamic content management and responsive design.</p>
-                <a href="https://primedasmamed.com/" target="_blank" class="work__overlay-btn">
-                  <i class="bx bx-link-external"></i> Live Demo
-                </a>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">Prime Dasma</h3>
-              <div class="work__tags">
-                <span class="work__tag">WordPress</span>
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix design">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/bcrtherapie.png" alt="BCR Therapie" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Custom WordPress website for BCR Therapie featuring dynamic content management and responsive design.</p>
-                <a href="https://bcrtherapie.co.uk/" target="_blank" class="work__overlay-btn">
-                  <i class="bx bx-link-external"></i> Live Demo
-                </a>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">BCR Therapie</h3>
-              <div class="work__tags">
-                <span class="work__tag">WordPress</span>
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix design">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/homeofkufi.png" alt="The Home Of Kufis" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Custom WordPress website for The Home Of Kufis featuring dynamic content management and responsive design.</p>
-                <a href="http://thehomeofkufis.co.uk/" target="_blank" class="work__overlay-btn">
-                  <i class="bx bx-link-external"></i> Live Demo
-                </a>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">The Home Of Kufis</h3>
-              <div class="work__tags">
-                <span class="work__tag">WordPress</span>
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">CSS</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix php">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/work1.jpg" alt="Queueing System" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Digital queue management system with real-time number display, ticket generation, and multi-counter support.</p>
-                <span class="work__overlay-label"><i class="bx bx-lock-alt"></i> Internal System</span>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">Queueing System</h3>
-              <div class="work__tags">
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">MySQL</span>
-                <span class="work__tag">JavaScript</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix php">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/work2.jpg" alt="Budget Request System" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Internal financial workflow app for managing budget requests, departmental approvals, and expense tracking.</p>
-                <span class="work__overlay-label"><i class="bx bx-lock-alt"></i> Internal System</span>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">Budget Request System</h3>
-              <div class="work__tags">
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">MySQL</span>
-                <span class="work__tag">Bootstrap</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="work__card mix php">
-            <div class="work__img-wrapper">
-              <img src="./assets/img/work3.jpg" alt="Inventory Management System" class="work__img" />
-              <div class="work__overlay">
-                <p class="work__desc">Comprehensive inventory tracking system with stock monitoring, detailed reporting, and user access control.</p>
-                <span class="work__overlay-label"><i class="bx bx-lock-alt"></i> Internal System</span>
-              </div>
-            </div>
-            <div class="work__info">
-              <h3 class="work__title">Inventory Management</h3>
-              <div class="work__tags">
-                <span class="work__tag">PHP</span>
-                <span class="work__tag">MySQL</span>
-                <span class="work__tag">Bootstrap</span>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </section>
-
-            <!--=============== CONTACT ===============-->
-      <section class="contact section" id="contact">
-        <span class="section__subtitle">Get in Touch</span>
-        <h2 class="section__title">Contact Me</h2>
-
-        <div class="contact__container container grid">
-          <div class="contact__content">
-            <h3 class="contact__title">Talk to Me</h3>
-
-            <div class="contact__info">
-              <div class="contact__card">
-                <i class="bx bx-mail-send contact__card-icon"></i>
-                <h3 class="contact__card-title">Email</h3>
-                <span class="contact__card-data"
-                  >florencegutierrezmain@gmail.com</span
-                >
-
-                <a
-                  href="mailto:florencegutierrezmain@gmail.com"
-                  target="blank"
-                  class="contact__button"
-                  >Email me
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i
-                ></a>
-              </div>
-              <!--    2 -->
-              <div class="contact__card">
-                <i class="bx bxl-whatsapp contact__card-icon"></i>
-                <h3 class="contact__card-title">Whatsapp</h3>
-                <span class="contact__card-data">908-589-4977</span>
-
-                <a
-                  href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!"
-                  target="blank"
-                  class="contact__button"
-                  >Message me
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i
-                ></a>
-              </div>
-              <!--    3 -->
-              <div class="contact__card">
-                <i class="bx bxl-messenger contact__card-icon"></i>
-                <h3 class="contact__card-title">Messenger</h3>
-                <span class="contact__card-data"
-                  >www.facebook.com/123binatog</span
-                >
-
-                <a
-                  href="https://www.facebook.com/123binatog/"
-                  target="blank"
-                  class="contact__button"
-                  >Message me
-                  <i class="bx bx-right-arrow-alt contact__button-icon"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="contact__content">
-            <h3 class="contact__title">Write me your project</h3>
-
-            <form action="" class="contact__form">
-              <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Name</label>
-                <input
-                  type="text"
-                  placeholder="Your Name"
-                  class="contact__form-input"
-                />
-              </div>
-
-              <div class="contact__form-div">
-                <label for="" class="contact__form-tag">Mail</label>
-                <input
-                  type="text"
-                  placeholder="Your email"
-                  class="contact__form-input"
-                />
-              </div>
-
-              <div class="contact__form-div contact__form-area">
-                <label for="" class="contact__form-tag">Project</label>
-                <textarea
-                  name=""
-                  id=""
-                  cols="30"
-                  rows="10"
-                  placeholder="Project details"
-                  class="contact__form-input"
-                ></textarea>
-              </div>
-
-              <button class="button">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <!--=============== FOOTER ===============-->
-    <footer class="footer">
-      <div class="footer__container container">
-        <h1 class="footer__title">Florence</h1>
-        <!-- <ul class="footer__list">
-          <li><a href="#about" class="footer__link"></a>About</li>
-          <li><a href="#work" class="footer__link"></a>Projects</li>
-        </ul> -->
-
-        <ul class="footer__social">
-          <a
-            href="https://web.facebook.com/123binatog"
-            target="_blank"
-            class="footer__social-link"
-            ><i class="bx bxl-facebook footer__card-icon"></i
-          ></a>
-          <a
-            href="https://www.instagram.com/shongbushong"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-instagram footer__card-icon"></i
-          ></a>
-          <a
-            href="https://twitter.com/florenshong"
-            target="_blank"
-            class="footer__social-link"
-          >
-            <i class="bx bxl-twitter footer__card-icon"></i
-          ></a>
-        </ul>
-
-        <span class="footer__copy">&#169; 2026 Florence Gutierrez. All Rights Reserved </span>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Florence Gutierrez | Full Stack Developer &amp; AI Automation Specialist</title>
+</head>
+<body>
+
+<!-- Full-page animated network background (fixed, z-index 0) -->
+<div class="page__bg" aria-hidden="true">
+  <svg class="page__bg-svg" viewBox="0 0 1440 860" xmlns="http://www.w3.org/2000/svg" fill="none" preserveAspectRatio="xMidYMid slice">
+    <defs>
+      <filter id="pglow" x="-100%" y="-100%" width="300%" height="300%">
+        <feGaussianBlur stdDeviation="2.5" result="blur"/>
+        <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+      </filter>
+    </defs>
+
+    <!-- TOP ROW -->
+    <line x1="80"   y1="110" x2="300"  y2="75"  stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="300"  y1="75"  x2="560"  y2="120" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="560"  y1="120" x2="820"  y2="85"  stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="820"  y1="85"  x2="1080" y2="115" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="1080" y1="115" x2="1370" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <!-- Top → Mid -->
+    <line x1="80"   y1="110" x2="150"  y2="305" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="300"  y1="75"  x2="410"  y2="275" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="560"  y1="120" x2="670"  y2="320" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="820"  y1="85"  x2="940"  y2="290" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="1080" y1="115" x2="940"  y2="290" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <line x1="1080" y1="115" x2="1230" y2="310" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <!-- UPPER-MID ROW -->
+    <line x1="150"  y1="305" x2="410"  y2="275" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="410"  y1="275" x2="670"  y2="320" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="670"  y1="320" x2="940"  y2="290" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="940"  y1="290" x2="1230" y2="310" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <!-- Mid → Lower -->
+    <line x1="150"  y1="305" x2="250"  y2="510" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="410"  y1="275" x2="510"  y2="480" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="670"  y1="320" x2="760"  y2="525" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="940"  y1="290" x2="1030" y2="495" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="1230" y1="310" x2="1300" y2="515" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <!-- LOWER-MID ROW -->
+    <line x1="250"  y1="510" x2="510"  y2="480" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="510"  y1="480" x2="760"  y2="525" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="760"  y1="525" x2="1030" y2="495" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="1030" y1="495" x2="1300" y2="515" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+    <!-- Lower → Bottom -->
+    <line x1="250"  y1="510" x2="360"  y2="715" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="510"  y1="480" x2="360"  y2="715" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <line x1="510"  y1="480" x2="680"  y2="700" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="760"  y1="525" x2="680"  y2="700" stroke="rgba(255,255,255,0.06)" stroke-width="1.5"/>
+    <line x1="1030" y1="495" x2="1090" y2="720" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <line x1="1300" y1="515" x2="1090" y2="720" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    <!-- BOTTOM ROW -->
+    <line x1="360"  y1="715" x2="680"  y2="700" stroke="rgba(255,255,255,0.07)" stroke-width="1.5"/>
+    <line x1="680"  y1="700" x2="1090" y2="720" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+
+    <!-- Animation paths (hidden) -->
+    <path id="p1"  d="M80,110 L300,75"     fill="none"/>
+    <path id="p2"  d="M300,75 L560,120"    fill="none"/>
+    <path id="p3"  d="M560,120 L820,85"    fill="none"/>
+    <path id="p4"  d="M820,85 L1080,115"   fill="none"/>
+    <path id="p5"  d="M80,110 L150,305"    fill="none"/>
+    <path id="p6"  d="M300,75 L410,275"    fill="none"/>
+    <path id="p7"  d="M560,120 L670,320"   fill="none"/>
+    <path id="p8"  d="M820,85 L940,290"    fill="none"/>
+    <path id="p9"  d="M1080,115 L940,290"  fill="none"/>
+    <path id="p10" d="M150,305 L410,275"   fill="none"/>
+    <path id="p11" d="M410,275 L670,320"   fill="none"/>
+    <path id="p12" d="M670,320 L940,290"   fill="none"/>
+    <path id="p13" d="M940,290 L1230,310"  fill="none"/>
+    <path id="p14" d="M150,305 L250,510"   fill="none"/>
+    <path id="p15" d="M410,275 L510,480"   fill="none"/>
+    <path id="p16" d="M670,320 L760,525"   fill="none"/>
+    <path id="p17" d="M940,290 L1030,495"  fill="none"/>
+    <path id="p18" d="M1230,310 L1300,515" fill="none"/>
+    <path id="p19" d="M250,510 L510,480"   fill="none"/>
+    <path id="p20" d="M510,480 L760,525"   fill="none"/>
+    <path id="p21" d="M760,525 L1030,495"  fill="none"/>
+    <path id="p22" d="M250,510 L360,715"   fill="none"/>
+    <path id="p23" d="M510,480 L680,700"   fill="none"/>
+    <path id="p24" d="M760,525 L680,700"   fill="none"/>
+    <path id="p25" d="M1030,495 L1090,720" fill="none"/>
+    <path id="p26" d="M360,715 L680,700"   fill="none"/>
+    <path id="p27" d="M680,700 L1090,720"  fill="none"/>
+
+    <!-- === NODES === -->
+    <!-- N1 (80,110) trigger -->
+    <rect x="52" y="86" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <circle cx="80" cy="110" r="9" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+    <circle cx="80" cy="110" r="3" fill="rgba(255,255,255,0.28)"/>
+    <!-- N2 (300,75) data lines -->
+    <rect x="272" y="51" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <rect x="284" y="63" width="28" height="3" rx="1.5" fill="rgba(255,255,255,0.22)"/>
+    <rect x="284" y="70" width="20" height="3" rx="1.5" fill="rgba(255,255,255,0.12)"/>
+    <rect x="284" y="77" width="25" height="3" rx="1.5" fill="rgba(255,255,255,0.18)"/>
+    <!-- N3 (560,120) blue process -->
+    <rect x="532" y="96" width="56" height="48" rx="11" fill="#0f1829" stroke="rgba(77,124,254,0.30)" stroke-width="1"/>
+    <rect x="547" y="110" width="14" height="14" rx="3" fill="rgba(77,124,254,0.38)"/>
+    <circle cx="572" cy="126" r="5" fill="none" stroke="rgba(77,124,254,0.55)" stroke-width="1.5"/>
+    <!-- N4 (820,85) send arrow -->
+    <rect x="792" y="61" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <path d="M806,85 L830,85 M822,77 L830,85 L822,93" stroke="rgba(255,255,255,0.24)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- N5 (1080,115) plus -->
+    <rect x="1052" y="91" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <path d="M1069,115 L1091,115 M1080,104 L1080,126" stroke="rgba(255,255,255,0.24)" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- N6 (1370,100) faded -->
+    <rect x="1342" y="76" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.06)" stroke-width="1" opacity="0.4"/>
+    <circle cx="1370" cy="100" r="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <!-- N7 (150,305) chart bars -->
+    <rect x="122" y="281" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <rect x="134" y="317" width="6" height="12" rx="1" fill="rgba(255,255,255,0.14)"/>
+    <rect x="144" y="311" width="6" height="18" rx="1" fill="rgba(255,255,255,0.20)"/>
+    <rect x="154" y="318" width="6" height="11" rx="1" fill="rgba(255,255,255,0.28)"/>
+    <!-- N8 (410,275) api hub blue -->
+    <rect x="382" y="251" width="56" height="48" rx="11" fill="#0f1a2e" stroke="rgba(77,124,254,0.35)" stroke-width="1"/>
+    <circle cx="400" cy="269" r="5" fill="rgba(77,124,254,0.55)"/>
+    <circle cx="420" cy="269" r="5" fill="rgba(77,124,254,0.35)"/>
+    <line   x1="405" y1="269" x2="415" y2="269" stroke="rgba(77,124,254,0.45)" stroke-width="1.5"/>
+    <circle cx="410" cy="284" r="5" fill="rgba(77,124,254,0.45)"/>
+    <!-- N9 (670,320) email -->
+    <rect x="642" y="296" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <rect x="653" y="307" width="32" height="22" rx="3" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    <path d="M653,307 L669,322 L685,307" stroke="rgba(255,255,255,0.18)" stroke-width="1" fill="none"/>
+    <!-- N10 (940,290) purple check -->
+    <rect x="912" y="266" width="56" height="48" rx="11" fill="#110e1a" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+    <path d="M927,290 L936,299 L953,280" stroke="rgba(167,139,250,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- N11 (1230,310) faded -->
+    <rect x="1202" y="286" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.06)" stroke-width="1" opacity="0.4"/>
+    <circle cx="1230" cy="310" r="8" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+    <!-- N12 (250,510) trigger -->
+    <rect x="222" y="486" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <circle cx="250" cy="510" r="9" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+    <circle cx="250" cy="510" r="3" fill="rgba(255,255,255,0.28)"/>
+    <!-- N13 (510,480) blue process -->
+    <rect x="482" y="456" width="56" height="48" rx="11" fill="#0f1829" stroke="rgba(77,124,254,0.30)" stroke-width="1"/>
+    <rect x="497" y="470" width="14" height="14" rx="3" fill="rgba(77,124,254,0.38)"/>
+    <circle cx="522" cy="486" r="5" fill="none" stroke="rgba(77,124,254,0.55)" stroke-width="1.5"/>
+    <!-- N14 (760,525) send arrow -->
+    <rect x="732" y="501" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <path d="M747,525 L771,525 M763,517 L771,525 L763,533" stroke="rgba(255,255,255,0.24)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- N15 (1030,495) hub lines -->
+    <rect x="1002" y="471" width="56" height="48" rx="11" fill="#0f1a2e" stroke="rgba(77,124,254,0.30)" stroke-width="1"/>
+    <rect x="1014" y="485" width="28" height="3" rx="1.5" fill="rgba(77,124,254,0.35)"/>
+    <rect x="1014" y="492" width="22" height="3" rx="1.5" fill="rgba(77,124,254,0.22)"/>
+    <rect x="1014" y="499" width="26" height="3" rx="1.5" fill="rgba(77,124,254,0.28)"/>
+    <!-- N16 (1300,515) faded bars -->
+    <rect x="1272" y="491" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.06)" stroke-width="1" opacity="0.35"/>
+    <rect x="1284" y="527" width="6" height="12" rx="1" fill="rgba(255,255,255,0.10)"/>
+    <rect x="1294" y="521" width="6" height="18" rx="1" fill="rgba(255,255,255,0.12)"/>
+    <rect x="1304" y="528" width="6" height="11" rx="1" fill="rgba(255,255,255,0.08)"/>
+    <!-- N17 (360,715) email -->
+    <rect x="332" y="691" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.09)" stroke-width="1"/>
+    <rect x="343" y="702" width="32" height="22" rx="3" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
+    <path d="M343,702 L359,717 L375,702" stroke="rgba(255,255,255,0.18)" stroke-width="1" fill="none"/>
+    <!-- N18 (680,700) purple check -->
+    <rect x="652" y="676" width="56" height="48" rx="11" fill="#110e1a" stroke="rgba(167,139,250,0.28)" stroke-width="1"/>
+    <path d="M667,700 L676,709 L693,690" stroke="rgba(167,139,250,0.6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <!-- N19 (1090,720) faded -->
+    <rect x="1062" y="696" width="56" height="48" rx="11" fill="#0d1220" stroke="rgba(255,255,255,0.05)" stroke-width="1" opacity="0.35"/>
+    <circle cx="1090" cy="720" r="8" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+
+    <!-- === ANIMATED DOTS === -->
+    <circle r="3.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.85"><animateMotion dur="3.2s" repeatCount="indefinite" begin="0s"><mpath href="#p1"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.75"><animateMotion dur="3.8s" repeatCount="indefinite" begin="-1.3s"><mpath href="#p2"/></animateMotion></circle>
+    <circle r="3"   fill="#a78bfa" filter="url(#pglow)" opacity="0.75"><animateMotion dur="3.5s" repeatCount="indefinite" begin="-0.6s"><mpath href="#p3"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.70"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-2.1s"><mpath href="#p4"/></animateMotion></circle>
+    <circle r="2.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.65"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.8s"><mpath href="#p5"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.72"><animateMotion dur="4.5s" repeatCount="indefinite" begin="-0.9s"><mpath href="#p6"/></animateMotion></circle>
+    <circle r="3"   fill="#a78bfa" filter="url(#pglow)" opacity="0.70"><animateMotion dur="4.2s" repeatCount="indefinite" begin="-2.5s"><mpath href="#p7"/></animateMotion></circle>
+    <circle r="2.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.68"><animateMotion dur="4.8s" repeatCount="indefinite" begin="-1.1s"><mpath href="#p8"/></animateMotion></circle>
+    <circle r="3"   fill="#a78bfa" filter="url(#pglow)" opacity="0.70"><animateMotion dur="4.2s" repeatCount="indefinite" begin="-3.2s"><mpath href="#p9"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.78"><animateMotion dur="3.6s" repeatCount="indefinite" begin="-2.0s"><mpath href="#p10"/></animateMotion></circle>
+    <circle r="3.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.85"><animateMotion dur="3.2s" repeatCount="indefinite" begin="-0.4s"><mpath href="#p11"/></animateMotion></circle>
+    <circle r="3"   fill="#a78bfa" filter="url(#pglow)" opacity="0.75"><animateMotion dur="3.8s" repeatCount="indefinite" begin="-1.6s"><mpath href="#p12"/></animateMotion></circle>
+    <circle r="2.5" fill="#a78bfa" filter="url(#pglow)" opacity="0.60"><animateMotion dur="4.5s" repeatCount="indefinite" begin="-3.5s"><mpath href="#p13"/></animateMotion></circle>
+    <circle r="2.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.65"><animateMotion dur="4.2s" repeatCount="indefinite" begin="-2.8s"><mpath href="#p14"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.72"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.4s"><mpath href="#p15"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.70"><animateMotion dur="4.3s" repeatCount="indefinite" begin="-0.7s"><mpath href="#p16"/></animateMotion></circle>
+    <circle r="3"   fill="#a78bfa" filter="url(#pglow)" opacity="0.72"><animateMotion dur="4.6s" repeatCount="indefinite" begin="-2.2s"><mpath href="#p17"/></animateMotion></circle>
+    <circle r="2"   fill="#a78bfa" filter="url(#pglow)" opacity="0.55"><animateMotion dur="5.0s" repeatCount="indefinite" begin="-3.8s"><mpath href="#p18"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.78"><animateMotion dur="3.4s" repeatCount="indefinite" begin="-1.9s"><mpath href="#p19"/></animateMotion></circle>
+    <circle r="3.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.82"><animateMotion dur="3.0s" repeatCount="indefinite" begin="-0.3s"><mpath href="#p20"/></animateMotion></circle>
+    <circle r="3"   fill="#a78bfa" filter="url(#pglow)" opacity="0.75"><animateMotion dur="3.7s" repeatCount="indefinite" begin="-2.4s"><mpath href="#p21"/></animateMotion></circle>
+    <circle r="2.5" fill="#4d7cfe" filter="url(#pglow)" opacity="0.62"><animateMotion dur="4.5s" repeatCount="indefinite" begin="-3.0s"><mpath href="#p22"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.70"><animateMotion dur="4.0s" repeatCount="indefinite" begin="-1.7s"><mpath href="#p23"/></animateMotion></circle>
+    <circle r="2.5" fill="#a78bfa" filter="url(#pglow)" opacity="0.65"><animateMotion dur="4.2s" repeatCount="indefinite" begin="-0.5s"><mpath href="#p24"/></animateMotion></circle>
+    <circle r="2.5" fill="#a78bfa" filter="url(#pglow)" opacity="0.60"><animateMotion dur="4.8s" repeatCount="indefinite" begin="-2.6s"><mpath href="#p25"/></animateMotion></circle>
+    <circle r="3"   fill="#4d7cfe" filter="url(#pglow)" opacity="0.75"><animateMotion dur="3.5s" repeatCount="indefinite" begin="-1.2s"><mpath href="#p26"/></animateMotion></circle>
+    <circle r="2.5" fill="#a78bfa" filter="url(#pglow)" opacity="0.62"><animateMotion dur="4.2s" repeatCount="indefinite" begin="-3.4s"><mpath href="#p27"/></animateMotion></circle>
+  </svg>
+</div>
+
+<!-- ==================== HEADER ==================== -->
+<header class="header" id="header">
+  <nav class="nav container">
+    <a href="#home" class="nav__logo">FYG</a>
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#services" class="nav__link">Services</a></li>
+        <li><a href="#work" class="nav__link">Work</a></li>
+        <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+    <a href="#contact" class="btn btn--outline nav__cta">Hire Me</a>
+    <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu">
+      <i class="bx bx-menu"></i>
+    </button>
+  </nav>
+</header>
+
+<!-- ==================== HERO ==================== -->
+<section class="hero section" id="home">
+
+  <div class="hero__container container">
+    <div class="hero__content">
+      <span class="hero__eyebrow">FULL STACK DEVELOPER &bull; AI AUTOMATION SPECIALIST &bull; PHILIPPINES &mdash; REMOTE</span>
+      <h1 class="hero__title">I build web systems and AI automations that scale.</h1>
+      <p class="hero__sub">From Laravel-powered backends to intelligent Make.com and n8n workflows &mdash; I help businesses ship faster and automate smarter.</p>
+
+      <div class="hero__pillars">
+        <span class="hero__pillar"><i class="bx bx-code-alt"></i> Full Stack Dev</span>
+        <span class="hero__pillar"><i class="bx bx-bot"></i> AI Automation</span>
+        <span class="hero__pillar"><i class="bx bx-link"></i> System Integration</span>
       </div>
-    </footer>
 
-    <!--=============== SCROLLREVEAL ===============-->
-    <script src="./assets/js/scrollreveal.min.js"></script>
+      <div class="hero__actions">
+        <a download href="/assets/cv/Florence_GutierrezCV2025.pdf" class="btn btn--outline">Download CV</a>
+        <a href="#work" class="btn btn--primary">View My Work</a>
+      </div>
 
-    <!--=============== SWIPER JS ===============-->
-    <script src="./assets/js/swiper-bundle.min.js"></script>
+      <div class="hero__stats">
+        <div class="hero__stat">
+          <span class="hero__stat-num">3+</span>
+          <span class="hero__stat-label">Years Experience</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">10+</span>
+          <span class="hero__stat-label">Projects Delivered</span>
+        </div>
+        <div class="hero__stat">
+          <span class="hero__stat-num">100%</span>
+          <span class="hero__stat-label">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
 
-    <!--=============== MIXITUP FILTER ===============-->
-    <script src="./assets/js/mixitup.min.js"></script>
 
-    <!--=============== MAIN JS ===============-->
-    <script src="./assets/js/main.js"></script>
-  </body>
+  </div>
+</section>
+
+<!-- ==================== ABOUT ==================== -->
+<section class="about section" id="about">
+  <div class="about__container container">
+    <div class="about__image-col">
+      <div class="about__photo-wrapper">
+        <img src="assets/img/florence1.png" alt="Florence Gutierrez" class="about__photo" />
+        <span class="about__badge"><i class="bx bx-radio-circle-marked"></i> Available for Work</span>
+      </div>
+      <p class="about__name">Florence Gutierrez</p>
+      <p class="about__location">Philippines &mdash; Remote Freelancer</p>
+    </div>
+
+    <div class="about__text-col">
+      <span class="section__label">ABOUT ME</span>
+      <h2 class="section__title">Building web systems and automations that feel simple, scalable, and useful.</h2>
+      <p class="about__bio">I help businesses ship fast, reliable web applications and intelligent automation workflows. My background spans Laravel and PHP-based full stack development combined with AI automation tools like Make.com, n8n, Zapier, and HighLevel. I focus on clean code, great user experiences, and systems that save real time.</p>
+
+      <div class="about__traits">
+        <div class="about__trait">
+          <h4 class="about__trait-title">Full Stack Development</h4>
+          <p class="about__trait-desc">Laravel, PHP, React, MySQL &mdash; scalable architecture from frontend to DB.</p>
+        </div>
+        <div class="about__trait">
+          <h4 class="about__trait-title">AI &amp; Automation</h4>
+          <p class="about__trait-desc">Make.com, Zapier, n8n, HighLevel &mdash; intelligent workflows that run themselves.</p>
+        </div>
+        <div class="about__trait">
+          <h4 class="about__trait-title">Remote &amp; Flexible</h4>
+          <p class="about__trait-desc">Collaborating with clients and businesses worldwide on every project.</p>
+        </div>
+        <div class="about__trait">
+          <h4 class="about__trait-title">Results Focused</h4>
+          <p class="about__trait-desc">Clean code, fast delivery, real impact &mdash; every system is built to perform.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section class="services section" id="services">
+  <div class="container">
+    <span class="section__label">SERVICES</span>
+    <h2 class="section__title">Web systems and AI automations built to perform.</h2>
+    <p class="section__subtitle">Full stack development and intelligent automation services designed to save time, reduce friction, and scale operations.</p>
+
+    <div class="services__grid">
+      <div class="services__card">
+        <i class="bx bx-code-alt services__card-icon"></i>
+        <h3 class="services__card-title">Full Stack Web Development</h3>
+        <ul class="services__card-features">
+          <li class="services__card-feature">Laravel, PHP, MySQL, REST APIs</li>
+          <li class="services__card-feature">Scalable architecture &amp; admin systems</li>
+          <li class="services__card-feature">Custom database design</li>
+          <li class="services__card-feature">React &amp; JavaScript frontends</li>
+        </ul>
+      </div>
+
+      <div class="services__card">
+        <i class="bx bxl-wordpress services__card-icon"></i>
+        <h3 class="services__card-title">WordPress Development</h3>
+        <ul class="services__card-features">
+          <li class="services__card-feature">Theme &amp; plugin customization</li>
+          <li class="services__card-feature">WooCommerce integration</li>
+          <li class="services__card-feature">Page builder implementation</li>
+          <li class="services__card-feature">Performance tuning &amp; SEO</li>
+        </ul>
+      </div>
+
+      <div class="services__card">
+        <i class="bx bx-bot services__card-icon"></i>
+        <h3 class="services__card-title">AI Workflow Automation</h3>
+        <ul class="services__card-features">
+          <li class="services__card-feature">Make.com, Zapier, n8n pipelines</li>
+          <li class="services__card-feature">Cross-platform automations</li>
+          <li class="services__card-feature">Trigger-based workflow logic</li>
+          <li class="services__card-feature">Reduced manual work</li>
+        </ul>
+      </div>
+
+      <div class="services__card">
+        <i class="bx bx-user-check services__card-icon"></i>
+        <h3 class="services__card-title">Lead Automation Systems</h3>
+        <ul class="services__card-features">
+          <li class="services__card-feature">CRM integrations &amp; HighLevel</li>
+          <li class="services__card-feature">Automated lead routing</li>
+          <li class="services__card-feature">Enriched contact data pipelines</li>
+          <li class="services__card-feature">Follow-up sequence automation</li>
+        </ul>
+      </div>
+
+      <div class="services__card">
+        <i class="bx bx-link-external services__card-icon"></i>
+        <h3 class="services__card-title">API &amp; Webhook Integrations</h3>
+        <ul class="services__card-features">
+          <li class="services__card-feature">Custom API builds &amp; connections</li>
+          <li class="services__card-feature">Real-time data sync pipelines</li>
+          <li class="services__card-feature">Multi-app bridge systems</li>
+          <li class="services__card-feature">Webhook event handling</li>
+        </ul>
+      </div>
+
+      <div class="services__card">
+        <i class="bx bx-data services__card-icon"></i>
+        <h3 class="services__card-title">Database &amp; System Architecture</h3>
+        <ul class="services__card-features">
+          <li class="services__card-feature">Schema design &amp; optimization</li>
+          <li class="services__card-feature">Query performance tuning</li>
+          <li class="services__card-feature">Internal tooling &amp; dashboards</li>
+          <li class="services__card-feature">Reporting system builds</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== TECH STACK ==================== -->
+<section class="stack section" id="skills">
+  <div class="container">
+    <span class="section__label">TECH STACK &amp; SYSTEMS</span>
+    <h2 class="section__title">Tools and systems used to build and automate.</h2>
+    <p class="section__subtitle">Modern web technologies, AI automation tools, and operational systems designed for scalable development.</p>
+
+    <div class="stack__grid">
+      <div class="stack__group">
+        <h3 class="stack__group-title">Frontend</h3>
+        <p class="stack__group-desc">Modern UI development and responsive interfaces.</p>
+        <div class="stack__chips">
+          <span class="stack__chip">HTML</span>
+          <span class="stack__chip">CSS</span>
+          <span class="stack__chip">JavaScript</span>
+          <span class="stack__chip">Bootstrap</span>
+          <span class="stack__chip">React</span>
+          <span class="stack__chip">WordPress</span>
+        </div>
+      </div>
+
+      <div class="stack__group">
+        <h3 class="stack__group-title">Backend</h3>
+        <p class="stack__group-desc">Server-side systems, databases, and API architecture.</p>
+        <div class="stack__chips">
+          <span class="stack__chip">PHP</span>
+          <span class="stack__chip">Laravel</span>
+          <span class="stack__chip">Node.js</span>
+          <span class="stack__chip">Python</span>
+          <span class="stack__chip">MySQL</span>
+          <span class="stack__chip">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="stack__group">
+        <h3 class="stack__group-title">AI &amp; Automation</h3>
+        <p class="stack__group-desc">Core automation platforms, AI models, and integration systems.</p>
+        <div class="stack__chips">
+          <span class="stack__chip">Make.com</span>
+          <span class="stack__chip">Zapier</span>
+          <span class="stack__chip">n8n</span>
+          <span class="stack__chip">HighLevel</span>
+          <span class="stack__chip">AI Agents</span>
+          <span class="stack__chip">Webhooks</span>
+          <span class="stack__chip">ChatGPT</span>
+          <span class="stack__chip">Gemini AI</span>
+        </div>
+      </div>
+
+      <div class="stack__group">
+        <h3 class="stack__group-title">Tools &amp; DevOps</h3>
+        <p class="stack__group-desc">Development tools, deployment, and workflow coordination.</p>
+        <div class="stack__chips">
+          <span class="stack__chip">Git</span>
+          <span class="stack__chip">GitHub</span>
+          <span class="stack__chip">VS Code</span>
+          <span class="stack__chip">Figma</span>
+          <span class="stack__chip">cPanel</span>
+          <span class="stack__chip">Linux</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== WORK ==================== -->
+<section class="work section" id="work">
+  <div class="container">
+    <span class="section__label">CASE STUDIES</span>
+    <h2 class="section__title">Projects Built for Real Business Results</h2>
+    <p class="section__subtitle">Real projects. Real results. Web systems and automation workflows designed to save time, reduce friction, and scale operations.</p>
+
+    <div class="work__filters">
+      <button class="work__filter active-work" data-filter=".automation">Automation</button>
+      <button class="work__filter" data-filter=".laravel">Laravel</button>
+      <button class="work__filter" data-filter=".wordpress">WordPress</button>
+      <button class="work__filter" data-filter=".php">PHP</button>
+    </div>
+
+    <div class="work__grid work__container">
+
+      <!-- AUTOMATION CASE 01 -->
+      <article class="work__card mix automation">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/automation-case-01.png" alt="Automatically Process Client Attachments" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">AI Workflow</span>
+            <span class="work__card-num">CASE 01</span>
+          </div>
+          <h3 class="work__card-title">Automatically Process Client Attachments</h3>
+          <p class="work__card-desc">Reduce repetitive admin work by automatically organizing incoming files, extracting key details, and routing them to the right place.</p>
+          <div class="work__card-section-title">KEY OUTCOMES</div>
+          <div class="work__card-chips">
+            <span class="work__chip outcome">Saves 5+ hours weekly</span>
+            <span class="work__chip outcome">Instant file routing</span>
+            <span class="work__chip outcome">Automates repetitive admin</span>
+          </div>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">Make.com</span>
+            <span class="work__chip tool">Gemini AI</span>
+            <span class="work__chip tool">Google Drive</span>
+            <span class="work__chip tool">Google Sheets</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- AUTOMATION CASE 02 -->
+      <article class="work__card mix automation">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/automation-case-02.png" alt="Automatically Qualify and Follow Up With Leads" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">Lead Automation</span>
+            <span class="work__card-num">CASE 02</span>
+          </div>
+          <h3 class="work__card-title">Automatically Qualify and Follow Up With Leads</h3>
+          <p class="work__card-desc">Capture and qualify incoming leads automatically, then trigger personalized follow-up sequences based on their responses and behavior.</p>
+          <div class="work__card-section-title">KEY OUTCOMES</div>
+          <div class="work__card-chips">
+            <span class="work__chip outcome">No lead left behind</span>
+            <span class="work__chip outcome">Instant lead routing</span>
+            <span class="work__chip outcome">Enriched CRM data</span>
+          </div>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">Make.com</span>
+            <span class="work__chip tool">HighLevel</span>
+            <span class="work__chip tool">Webhooks</span>
+            <span class="work__chip tool">Gmail</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- AUTOMATION CASE 03 -->
+      <article class="work__card mix automation">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/automation-case-03.png" alt="Turn One Piece of Content Into Multiple Posts" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">Content Automation</span>
+            <span class="work__card-num">CASE 03</span>
+          </div>
+          <h3 class="work__card-title">Turn One Piece of Content Into Multiple Posts</h3>
+          <p class="work__card-desc">Extract highlights from long-form content, rewrite copies for different formats, and prepare multi-channel posts automatically with AI.</p>
+          <div class="work__card-section-title">KEY OUTCOMES</div>
+          <div class="work__card-chips">
+            <span class="work__chip outcome">Consistent post scheduling</span>
+            <span class="work__chip outcome">AI-assisted copywriting</span>
+            <span class="work__chip outcome">Multi-channel scaling</span>
+          </div>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">Make.com</span>
+            <span class="work__chip tool">ChatGPT</span>
+            <span class="work__chip tool">AssemblyAI</span>
+            <span class="work__chip tool">Google Sheets</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- AUTOMATION CASE 04 -->
+      <article class="work__card mix automation">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/automation-case-04.png" alt="AI Customer Support Assistant" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">Conversational AI</span>
+            <span class="work__card-num">CASE 04</span>
+          </div>
+          <h3 class="work__card-title">AI Customer Support Assistant</h3>
+          <p class="work__card-desc">Deploy an intelligent AI assistant that handles customer queries 24/7, routes complex cases, and maintains context across conversations.</p>
+          <div class="work__card-section-title">KEY OUTCOMES</div>
+          <div class="work__card-chips">
+            <span class="work__chip outcome">24/7 client interactions</span>
+            <span class="work__chip outcome">Context-aware responses</span>
+            <span class="work__chip outcome">Seamless system handoffs</span>
+          </div>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">n8n</span>
+            <span class="work__chip tool">OpenAI</span>
+            <span class="work__chip tool">Webhooks</span>
+            <span class="work__chip tool">Airtable</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Domain Ichiba -->
+      <article class="work__card mix laravel">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/image.png" alt="Domain Ichiba" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">Laravel App</span>
+          </div>
+          <h3 class="work__card-title">Domain Ichiba</h3>
+          <p class="work__card-desc">Domain marketplace platform with search, filtering, and transaction management built on Laravel.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">Laravel</span>
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">MySQL</span>
+          </div>
+          <a href="https://www.domainichiba.com/" target="_blank" class="work__card-link"><i class="bx bx-link-external"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Bentahero -->
+      <article class="work__card mix wordpress">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/image2.png" alt="Bentahero" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">WordPress</span>
+          </div>
+          <h3 class="work__card-title">Bentahero.com</h3>
+          <p class="work__card-desc">Custom WordPress site featuring dynamic content management, responsive design, and custom theme development.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">WordPress</span>
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">CSS</span>
+          </div>
+          <a href="https://www.bentahero.com/" target="_blank" class="work__card-link"><i class="bx bx-link-external"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: CraftShack -->
+      <article class="work__card mix wordpress">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/craftshack.png" alt="CraftShack" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">WordPress</span>
+          </div>
+          <h3 class="work__card-title">CraftShack Website</h3>
+          <p class="work__card-desc">Custom WordPress site for CraftShack with dynamic content, responsive design, and optimized performance.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">WordPress</span>
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">CSS</span>
+          </div>
+          <a href="https://craftshack.ph/" target="_blank" class="work__card-link"><i class="bx bx-link-external"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Prime Dasma -->
+      <article class="work__card mix wordpress">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/primedasma.png" alt="Prime Dasma" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">WordPress</span>
+          </div>
+          <h3 class="work__card-title">Prime Dasma Med</h3>
+          <p class="work__card-desc">Custom WordPress website for Prime Dasma with dynamic content management and responsive design.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">WordPress</span>
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">CSS</span>
+          </div>
+          <a href="https://primedasmamed.com/" target="_blank" class="work__card-link"><i class="bx bx-link-external"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: BCR Therapie -->
+      <article class="work__card mix wordpress">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/bcrtherapie.png" alt="BCR Therapie" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">WordPress</span>
+          </div>
+          <h3 class="work__card-title">BCR Therapie</h3>
+          <p class="work__card-desc">Custom WordPress site for BCR Therapie with dynamic content management and responsive design.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">WordPress</span>
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">CSS</span>
+          </div>
+          <a href="https://bcrtherapie.co.uk/" target="_blank" class="work__card-link"><i class="bx bx-link-external"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Home of Kufis -->
+      <article class="work__card mix wordpress">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/homeofkufi.png" alt="The Home Of Kufis" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">WordPress</span>
+          </div>
+          <h3 class="work__card-title">The Home Of Kufis</h3>
+          <p class="work__card-desc">Custom WordPress website for The Home Of Kufis with dynamic content management and responsive design.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">WordPress</span>
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">CSS</span>
+          </div>
+          <a href="http://thehomeofkufis.co.uk/" target="_blank" class="work__card-link"><i class="bx bx-link-external"></i> Live Demo</a>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Queueing System -->
+      <article class="work__card mix php">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/work1.jpg" alt="Queueing System" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">PHP System</span>
+          </div>
+          <h3 class="work__card-title">Queueing System</h3>
+          <p class="work__card-desc">Digital queue management with real-time number display, ticket generation, and multi-counter support.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">MySQL</span>
+            <span class="work__chip tool">JavaScript</span>
+          </div>
+          <span class="work__card-internal"><i class="bx bx-lock-alt"></i> Internal System</span>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Budget Request System -->
+      <article class="work__card mix php">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/work2.jpg" alt="Budget Request System" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">PHP System</span>
+          </div>
+          <h3 class="work__card-title">Budget Request System</h3>
+          <p class="work__card-desc">Internal financial workflow app for managing budget requests, departmental approvals, and expense tracking.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">MySQL</span>
+            <span class="work__chip tool">Bootstrap</span>
+          </div>
+          <span class="work__card-internal"><i class="bx bx-lock-alt"></i> Internal System</span>
+        </div>
+      </article>
+
+      <!-- WEB PROJECT: Inventory Management -->
+      <article class="work__card mix php">
+        <div class="work__card-img-wrapper">
+          <img src="assets/img/work3.jpg" alt="Inventory Management" class="work__card-img" />
+        </div>
+        <div class="work__card-body">
+          <div class="work__card-meta">
+            <span class="work__card-badge">PHP System</span>
+          </div>
+          <h3 class="work__card-title">Inventory Management</h3>
+          <p class="work__card-desc">Comprehensive inventory tracking system with stock monitoring, detailed reporting, and user access control.</p>
+          <div class="work__card-section-title">TOOLS CONNECTED</div>
+          <div class="work__card-chips">
+            <span class="work__chip tool">PHP</span>
+            <span class="work__chip tool">MySQL</span>
+            <span class="work__chip tool">Bootstrap</span>
+          </div>
+          <span class="work__card-internal"><i class="bx bx-lock-alt"></i> Internal System</span>
+        </div>
+      </article>
+
+    </div><!-- end work__grid -->
+
+    <div class="work__stats">
+      <div class="work__stat"><span class="work__stat-num">50+</span><span class="work__stat-label">Hours Saved Monthly</span></div>
+      <div class="work__stat"><span class="work__stat-num">90%</span><span class="work__stat-label">Tasks Automated</span></div>
+      <div class="work__stat"><span class="work__stat-num">20+</span><span class="work__stat-label">Businesses Helped</span></div>
+      <div class="work__stat"><span class="work__stat-num">100%</span><span class="work__stat-label">Client Satisfaction</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PROCESS ==================== -->
+<section class="process section" id="process">
+  <div class="container">
+    <span class="section__label">PROCESS</span>
+    <h2 class="section__title">From requirements to fully deployed systems.</h2>
+    <p class="section__subtitle">Every project &mdash; whether a web system or automation workflow &mdash; is built with clarity, scalability, and real operational impact in mind.</p>
+
+    <div class="process__steps">
+      <div class="process__step">
+        <span class="process__step-num">01</span>
+        <div class="process__step-content">
+          <h3 class="process__step-title">Discovery Call</h3>
+          <p class="process__step-desc">We review your current setup, bottlenecks, tools, goals, and the outcome you want to achieve &mdash; web system or automation.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <span class="process__step-num">02</span>
+        <div class="process__step-content">
+          <h3 class="process__step-title">Architecture &amp; Planning</h3>
+          <p class="process__step-desc">I design the DB schema, API structure, or automation logic map &mdash; recommending tools, defining triggers, and outlining the best workflow structure.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <span class="process__step-num">03</span>
+        <div class="process__step-content">
+          <h3 class="process__step-title">Development &amp; Build</h3>
+          <p class="process__step-desc">I build the system using Laravel, PHP, React for web projects &mdash; or Make.com, Zapier, n8n, webhooks, and AI models for automations.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <span class="process__step-num">04</span>
+        <div class="process__step-content">
+          <h3 class="process__step-title">Testing &amp; Optimization</h3>
+          <p class="process__step-desc">I test real scenarios, fix edge cases, tune performance, refine prompts, and make the system reliable before going live.</p>
+        </div>
+      </div>
+      <div class="process__step">
+        <span class="process__step-num">05</span>
+        <div class="process__step-content">
+          <h3 class="process__step-title">Launch &amp; Support</h3>
+          <p class="process__step-desc">The project goes live with documentation, a walkthrough, and optional ongoing improvements or support after launch.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== PRICING ==================== -->
+<section class="pricing section" id="pricing">
+  <div class="container">
+    <span class="section__label">PRICING</span>
+    <h2 class="section__title">Flexible packages for different project needs.</h2>
+    <p class="section__subtitle">Simple, scalable packages for web development and AI automation &mdash; designed to save time and deliver real results.</p>
+
+    <div class="pricing__grid">
+      <div class="pricing__card">
+        <p class="pricing__label">FOR FOCUSED PROJECTS</p>
+        <h3 class="pricing__plan">Starter</h3>
+        <p class="pricing__price">Starting at <strong>$300</strong></p>
+        <ul class="pricing__features">
+          <li class="pricing__feature"><i class="bx bx-check"></i> 1 web page or single automation</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Up to 2 integrations</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Testing &amp; optimization</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Basic documentation</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Typical delivery: 3&ndash;5 days</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline pricing__cta">Get in Touch</a>
+      </div>
+
+      <div class="pricing__card pricing__popular">
+        <span class="pricing__popular-badge">MOST POPULAR</span>
+        <p class="pricing__label">FOR GROWING BUSINESSES</p>
+        <h3 class="pricing__plan">Growth</h3>
+        <p class="pricing__price">Starting at <strong>$1,000</strong></p>
+        <ul class="pricing__features">
+          <li class="pricing__feature"><i class="bx bx-check"></i> Full web app or multi-step automation</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Up to 5 connected integrations</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> CRM or database integration</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Laravel or PHP backend</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Workflow documentation</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Typical delivery: 1&ndash;2 weeks</li>
+        </ul>
+        <a href="#contact" class="btn btn--primary pricing__cta">Get in Touch</a>
+      </div>
+
+      <div class="pricing__card">
+        <p class="pricing__label">FOR ENTERPRISE SYSTEMS</p>
+        <h3 class="pricing__plan">Custom</h3>
+        <p class="pricing__price">Starting at <strong>$2,500+</strong></p>
+        <ul class="pricing__features">
+          <li class="pricing__feature"><i class="bx bx-check"></i> Advanced full stack architecture</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Custom APIs &amp; webhook integrations</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Scalable automation infrastructure</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> System consulting &amp; planning</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Priority support</li>
+          <li class="pricing__feature"><i class="bx bx-check"></i> Custom timeline</li>
+        </ul>
+        <a href="#contact" class="btn btn--outline pricing__cta">Get in Touch</a>
+      </div>
+    </div>
+
+    <p class="pricing__note">* Every project is customized based on your requirements, tools, and complexity.</p>
+  </div>
+</section>
+
+<!-- ==================== EXPERIENCE ==================== -->
+<section class="experience section" id="experience">
+  <div class="container">
+    <span class="section__label">BACKGROUND &amp; EXPERIENCE</span>
+    <h2 class="section__title">Experience across full stack development and AI automation.</h2>
+    <p class="section__subtitle">A multidisciplinary background combining web development, system architecture, and intelligent automation.</p>
+
+    <div class="experience__grid">
+      <div class="experience__item">
+        <div class="experience__header">
+          <h3 class="experience__role">Full Stack Developer</h3>
+          <span class="experience__company">Golden Pencil &mdash; Quezon City</span>
+          <div class="experience__meta">
+            <span class="experience__type">Current Role</span>
+            <span class="experience__period">November 2024 &ndash; Present</span>
+          </div>
+        </div>
+        <ul class="experience__bullets">
+          <li>Develop and maintain web applications using PHP and WordPress.</li>
+          <li>Troubleshoot and resolve WordPress issues, ensuring smooth website operation in production environments.</li>
+          <li>Aid on online events of clients and provide technical support during onsite client events.</li>
+        </ul>
+      </div>
+
+      <div class="experience__item">
+        <div class="experience__header">
+          <h3 class="experience__role">Web Developer</h3>
+          <span class="experience__company">Inext Software &mdash; Muntinlupa</span>
+          <div class="experience__meta">
+            <span class="experience__type">Web Development</span>
+            <span class="experience__period">April 2024 &ndash; September 2024</span>
+          </div>
+        </div>
+        <ul class="experience__bullets">
+          <li>Develop and maintain web applications using the Laravel framework.</li>
+          <li>Customize and extend Laravel features to meet specific project requirements.</li>
+          <li>Redesign the UI and UX of clients&rsquo; websites and update Laravel versions to the latest release.</li>
+          <li>Design and develop WordPress websites using custom themes and plugins; troubleshoot and resolve WordPress issues in production environments.</li>
+        </ul>
+      </div>
+
+      <div class="experience__item">
+        <div class="experience__header">
+          <h3 class="experience__role">Junior Programmer</h3>
+          <span class="experience__company">Prestige Interactive &mdash; Ortigas</span>
+          <div class="experience__meta">
+            <span class="experience__type">Entry Level</span>
+            <span class="experience__period">August 2023 &ndash; April 2024</span>
+          </div>
+        </div>
+        <ul class="experience__bullets">
+          <li>Update the website database using the company&rsquo;s CRM and SQL queries in HeidiSQL.</li>
+          <li>Update the design and layout of the website and upload new ads and data.</li>
+          <li>Map plotting for directories and installation of the Laravel app on every directory.</li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section class="contact section" id="contact">
+  <div class="contact__container container">
+    <div class="contact__info-col">
+      <span class="section__label">CONTACT</span>
+      <h2 class="contact__headline">Let&rsquo;s Build Something Together</h2>
+      <p class="contact__sub">Whether you need a full stack web system or an intelligent automation workflow &mdash; reach out and let&rsquo;s plan it.</p>
+
+      <div class="contact__cards">
+        <a href="mailto:florencegutierrezmain@gmail.com" class="contact__card">
+          <i class="bx bx-mail-send contact__card-icon"></i>
+          <div>
+            <h4 class="contact__card-title">Email</h4>
+            <span class="contact__card-data">florencegutierrezmain@gmail.com</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/florence-gutierrez-5a3b60260/" target="_blank" class="contact__card">
+          <i class="bx bxl-linkedin-square contact__card-icon"></i>
+          <div>
+            <h4 class="contact__card-title">LinkedIn</h4>
+            <span class="contact__card-data">florence-gutierrez</span>
+          </div>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=9085894977" target="_blank" class="contact__card">
+          <i class="bx bxl-whatsapp contact__card-icon"></i>
+          <div>
+            <h4 class="contact__card-title">WhatsApp</h4>
+            <span class="contact__card-data">908-589-4977</span>
+          </div>
+        </a>
+        <a href="https://github.com/Florenciong" target="_blank" class="contact__card">
+          <i class="bx bxl-github contact__card-icon"></i>
+          <div>
+            <h4 class="contact__card-title">GitHub</h4>
+            <span class="contact__card-data">Florenciong</span>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <div class="contact__form-col">
+      <h3 class="contact__form-heading">Send a Message</h3>
+      <form action="" class="contact__form">
+        <div class="contact__form-group">
+          <label class="contact__form-label">Name</label>
+          <input type="text" placeholder="Your Name" class="contact__form-input" />
+        </div>
+        <div class="contact__form-group">
+          <label class="contact__form-label">Email</label>
+          <input type="email" placeholder="Your email" class="contact__form-input" />
+        </div>
+        <div class="contact__form-group">
+          <label class="contact__form-label">Message</label>
+          <textarea placeholder="Project details or message..." class="contact__form-input contact__form-textarea" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary">Send Message</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer class="footer">
+  <div class="footer__inner container">
+    <div class="footer__brand">
+      <h2 class="footer__logo">Florence Gutierrez</h2>
+      <p class="footer__tagline">FULL STACK DEVELOPER | AI AUTOMATION SPECIALIST</p>
+      <p class="footer__sub">Building scalable web systems and intelligent automation workflows.</p>
+    </div>
+    <nav class="footer__nav">
+      <a href="#about" class="footer__link">About</a>
+      <a href="#services" class="footer__link">Services</a>
+      <a href="#work" class="footer__link">Work</a>
+      <a href="#pricing" class="footer__link">Pricing</a>
+      <a href="#contact" class="footer__link">Contact</a>
+    </nav>
+    <div class="footer__socials">
+      <a href="https://www.linkedin.com/in/florence-gutierrez-5a3b60260/" target="_blank" class="footer__social"><i class="bx bxl-linkedin-square"></i></a>
+      <a href="https://github.com/Florenciong" target="_blank" class="footer__social"><i class="bx bxl-github"></i></a>
+      <a href="https://web.facebook.com/123binatog" target="_blank" class="footer__social"><i class="bx bxl-facebook"></i></a>
+    </div>
+  </div>
+  <div class="footer__bottom container">
+    <span class="footer__copy">&copy; 2026 Florence Gutierrez. All rights reserved.</span>
+  </div>
+</footer>
+
+<!-- ==================== LIGHTBOX ==================== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image preview">
+  <div class="lightbox__backdrop" id="lightbox-backdrop"></div>
+  <button class="lightbox__close" id="lightbox-close" aria-label="Close preview"><i class="bx bx-x"></i></button>
+  <div class="lightbox__content">
+    <img src="" alt="" class="lightbox__img" id="lightbox-img" />
+  </div>
+</div>
+
+<script src="./assets/js/scrollreveal.min.js"></script>
+<script src="./assets/js/mixitup.min.js"></script>
+<script src="./assets/js/main.js"></script>
+</body>
 </html>

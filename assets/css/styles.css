@@ -280,7 +280,7 @@ button {
 .hero__sub {
   font-size: 1rem;
   color: var(--text-muted);
-  max-width: 500px;
+  max-width: 100%;
   margin-bottom: 2rem;
   line-height: 1.7;
 }
